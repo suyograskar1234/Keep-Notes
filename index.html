@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEEPNOTES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>KEEP NOTES APPLICATION</h1>
+        <button class="delete-all-btn" onclick="delete_all()">Delete All Notes</button>
+    </header>
+    <hr>
+    <main>
+    <section class="notesdisplay" onload="load_data()">
+       
+    </section>
+    <br><br><br>
+    <hr>
+    <section class="notesentry">
+        <h2>Create New Notes</h2>
+        <div class="entry">
+            <div class="inputentry">
+            <label for="title">Title of the Notes</label>
+            <input type="text" class = 'title' placeholder="Enter the Title of the notes" name = 'title'>
+            <br>
+            <label for="Notes">Enter Notes</label>
+            <textarea id="" class = 'Notes' cols="30" rows="10" placeholder="Enter the Notes here" name = 'Notes'></textarea>
+            <button class="add-btn" id="newnote">Add New Note</button>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</main>
+</body>
+</html>
